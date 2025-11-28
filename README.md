@@ -3,7 +3,7 @@
 
 
 **Track 3: Fullstack Web + API + Database Assignment**## Getting Started
-
+Note:Screenshot of webiste available in public/website_images
 
 
 A comprehensive employee and task management system built with Next.js, MongoDB, and Clerk authentication.First, run the development server:
