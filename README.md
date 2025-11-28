@@ -72,7 +72,8 @@ npm installCheck out our [Next.js deployment documentation](https://nextjs.org/d
 
 ```
 
-### 2. Setup MongoDB (Free Cluster)
+### 2. Setup MongoDB 
+
 
 1. Go to [MongoDB Atlas](https://cloud.mongodb.com/)
 2. Create a free account or sign in
@@ -84,7 +85,7 @@ npm installCheck out our [Next.js deployment documentation](https://nextjs.org/d
 8. Replace `<password>` with your database password
 9. Save this connection string for the next step
 
-### 3. Setup Clerk Authentication (Free)
+### 3. Setup Clerk Authentication 
 
 1. Go to [Clerk Dashboard](https://dashboard.clerk.com/)
 2. Create a free account or sign in
