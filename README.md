@@ -1,5 +1,5 @@
 # Employee Task Management SystemThis is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-#Note:Screenshot of website available in public/website_images
+Note:Screenshot of website available in public/website_images
 
 
 **Track 3: Fullstack Web + API + Database Assignment**## Getting Started
