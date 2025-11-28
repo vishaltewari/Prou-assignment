@@ -48,15 +48,15 @@ npm run dev
 
 To learn more about Next.js, take a look at the following resources:
 
-- **Frontend**: Next.js 14+ (App Router), TypeScript, Tailwind CSS
+- **Frontend**: Next.js , TypeScript, Tailwind CSS
 
-- **Backend**: Next.js API Routes- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- **Backend**: Next.js API Routes
 
-- **Database**: MongoDB (with Mongoose ODM)- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Database**: MongoDB .
 
-- **Authentication**: Clerk (with role-based access control)
+- **Authentication**: Clerk 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
 
 ## Setup Instructions
 
