@@ -46,7 +46,7 @@ npm run dev
 
 ## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
+
 
 - **Frontend**: Next.js , TypeScript, Tailwind CSS
 
@@ -149,27 +149,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 4. **View tasks** assigned to you
 5. **Update status** and **log time** on tasks
 
-## Project Structure
 
-```
-├── app/
-│   ├── admin/dashboard/          # Admin dashboard UI
-│   ├── employee/dashboard/       # Employee dashboard UI
-│   ├── api/
-│   │   ├── employees/           # Employee CRUD endpoints
-│   │   ├── tasks/               # Task CRUD endpoints
-│   │   └── sync-user/           # User sync helper
-│   ├── sign-in/                 # Sign in page
-│   ├── sign-up/                 # Sign up page
-│   └── page.tsx                 # Landing page
-├── models/
-│   ├── Employee.ts              # Employee MongoDB schema
-│   └── Task.ts                  # Task MongoDB schema
-├── lib/
-│   └── mongodb.ts               # Database connection
-├── middleware.ts                # Role-based route protection
-└── .env.local                   # Environment variables
-```
 
 ## API Endpoints
 
@@ -187,34 +167,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 - `PUT /api/tasks/[id]` - Update task (Admin: all fields, Employee: status & time only)
 - `DELETE /api/tasks/[id]` - Delete task (Admin only)
 
-## Database Models
 
-### Employee
-```typescript
-{
-  clerkUserId: string
-  email: string
-  name: string
-  role: 'admin' | 'employee'
-  department?: string
-  position?: string
-  hireDate: Date
-}
-```
-
-### Task
-```typescript
-{
-  title: string
-  description: string
-  assignedTo: ObjectId (Employee)
-  status: 'To Do' | 'In Progress' | 'Completed' | 'Blocked'
-  priority: 'Low' | 'Medium' | 'High' | 'Urgent'
-  dueDate: Date
-  timeLogged?: number (in minutes)
-  createdBy: string (Clerk User ID)
-}
-```
 
 ## Features Implemented
 
@@ -222,19 +175,10 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ✅ **Task Assignment** - Admin can assign tasks with priorities  
 ✅ **Task Status Tracking** - 4 status levels (To Do, In Progress, Completed, Blocked)  
 ✅ **Priority Levels** - 4 priority levels (Low, Medium, High, Urgent)  
-✅ **Time Logging** - Employees can log time spent on tasks  
 ✅ **Role-Based Access Control** - Separate admin and employee views  
 ✅ **Authentication** - Secure login with Clerk  
-✅ **Database Integration** - MongoDB for data persistence  
-✅ **RESTful API** - Clean API architecture  
+✅ **Database Integration** - MongoDB for data storage
+✅ **RESTful API** -  API architecture  
 ✅ **Responsive UI** - Works on desktop and mobile  
 
-## Notes
 
-- First user needs manual admin role assignment in Clerk Dashboard
-- Employees are created by admin through the dashboard
-- Employee accounts are automatically created in Clerk when added
-- Deleting an employee also deletes all their assigned tasks
-- Only employees can see their own tasks
-- Admin can see and manage all tasks
-- Simple design without external icon/date libraries (assignment-friendly)
